@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import * as React from "react";
+import Navbar from "./Component/Navbar";
+import Skill from "./Component/Skill";
+import Project from "./Component/Project";
+import Footer from "./Component/Footer";
+import { raj } from "./Data/Data";
+import Summery from "./Component/Summery";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div>
+         <Navbar name={raj.name} />
+         <Summery bio={raj.bio} />
+         <Skill skills={raj.skills} />
+         <Project projects={raj.projects} />
+         <Footer address={raj.address} />
+      </div>
+   );
 }
 
 export default App;
