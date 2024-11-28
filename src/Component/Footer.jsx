@@ -1,6 +1,6 @@
 function Footer({ address }) {
    return (
-      <footer id="Footer" className="text-center p-4 bg-gray-800 text-white w-full z-50 shadow-md">
+      <footer id="Footer" className="text-center p-4 fixed bottom-0 bg-gray-800 text-white w-full z-50 shadow-md">
          <section className="flex justify-around">
             <div>
                <h1>Services</h1>

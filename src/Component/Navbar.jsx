@@ -4,8 +4,8 @@ import Summery from "./Summery";
 function Navbar({ name, bio, image }) {
    return (
       <>
-         <header id="Navbar" className="p-4 bg-gray-800 text-white flex justify-between items-center">
-            <nav className="flex space-x-4">
+         <header id="Navbar" className="bg-black text-white p-4 flex justify-center items-center">
+            <nav className="space-x-4">
                <Link to="Navbar" smooth={true} duration={500} className="hover:text-blue-500 cursor-pointer">
                   {name}
                </Link>
@@ -17,9 +17,11 @@ function Navbar({ name, bio, image }) {
                </Link>
             </nav>
          </header>
-         <main className="flex justify-center items-center h-{100vh}">
+         <main className="flex justify-center items-center bg-gray-500 text-white py-20 gap-4">
             <Summery bio={bio} />
-            <img src="./Raj-pote.jpg" alt="Raj Pote" className="h-1/2 w-1/2 rounded-full" />
+            <div className="w-1/2 flex justify-center items-center">
+               <img src="./Raj-pote.jpg" alt="Raj Pote" className="h-1/2 w-1/2 rounded-full" />
+            </div>
          </main>
       </>
    );

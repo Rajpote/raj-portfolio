@@ -14,7 +14,7 @@ function App() {
          <Skill skills={raj.skills} />
          <hr />
          <Project projects={raj.projects} />
-         <Footer address={raj.address} />
+         {/* <Footer address={raj.address} /> */}
       </div>
    );
 }
