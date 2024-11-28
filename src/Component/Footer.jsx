@@ -1,6 +1,6 @@
 function Footer({ address }) {
    return (
-      <footer id="Footer" className="text-center p-4 fixed bottom-0 bg-gray-800 text-white w-full z-50 shadow-md">
+      <footer id="Footer" className="text-center p-4 bg-gray-800 text-white w-full shadow-md">
          <section className="flex justify-around">
             <div>
                <h1>Services</h1>
@@ -9,9 +9,16 @@ function Footer({ address }) {
                </ul>
             </div>
             <div>
-               <h1>Services</h1>
-               <ul>
-                  <li>Web development</li>
+               <h1>Contact</h1>
+               <ul className="text-right
+               ">
+                  <li>{address.email}</li>
+                  <li>
+                     <a href={address.github}>GitHub</a>{" "}
+                  </li>
+                  <li>
+                     <a href={address.LinkedIn}>LinkedIn</a>
+                  </li>
                </ul>
             </div>
          </section>

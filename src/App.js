@@ -14,7 +14,8 @@ function App() {
          <Skill skills={raj.skills} />
          <hr />
          <Project projects={raj.projects} />
-         {/* <Footer address={raj.address} /> */}
+         <div className="flex-grow" />
+         <Footer address={raj.address} />
       </div>
    );
 }
