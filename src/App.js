@@ -5,14 +5,14 @@ import Skill from "./Component/Skill";
 import Project from "./Component/Project";
 import Footer from "./Component/Footer";
 import { raj } from "./Data/Data";
-import Summery from "./Component/Summery";
 
 function App() {
    return (
-      <div>
-         <Navbar name={raj.name} />
-         <Summery bio={raj.bio} />
+      <div className="flex flex-col min-h-screen">
+         <Navbar name={raj.name} bio={raj.bio} image={raj.image} />
+         <hr />
          <Skill skills={raj.skills} />
+         <hr />
          <Project projects={raj.projects} />
          <Footer address={raj.address} />
       </div>
